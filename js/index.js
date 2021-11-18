@@ -4,13 +4,16 @@ let count = 0;
 
 function increment() {
   count += 1;
-  countEl.innerText = count;
+  countEl.textContent = count;
 }
 
 function save() {
-  let showedNumber = count + " -";
-  saveEl.innerText += " " + showedNumber;
+  let showedNumber = " " + count + " - ";
+  saveEl.textContent += showedNumber;
   console.log(count)
+  count = 0;
+  countEl.textContent = count;
+
 }
 
 save()
