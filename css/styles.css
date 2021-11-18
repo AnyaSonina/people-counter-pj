@@ -47,22 +47,31 @@ button {
   width: 200px;
   margin-bottom: 5px;
   border-radius: 5px;
-  transition: transform .25s;
+  box-shadow: 0 4px #999;
 }
 
-button:hover {
+button:hover {  
   cursor: pointer;
 }
 
 button:active {
-  transform: scale(.97);
-  box-shadow: 5px 5px  lightcyan, -5px -5px lightcyan;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
 }
 
 #increment-btn {
-  background: darkred;
+  background: rgb(197, 59, 59);
 }
 
+#increment-btn:hover {
+  background-color: darkred;
+}
+
+
 #save-btn {
-  background: darkgreen;
+  background: rgb(14, 156, 14);
+}
+
+#save-btn:hover {
+  background-color: darkgreen;
 }
